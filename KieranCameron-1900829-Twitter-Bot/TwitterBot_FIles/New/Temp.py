@@ -25,7 +25,7 @@ while True:
 			lcd.setCursor(0, 0)
 			lcd.printout("temp={0:0.1f}C".format(temperature))
 			lcd.setCursor(0, 1)
-			#lcd.printout("Humidity={1:0.1f}%".format(humidity))
+			lcd.printout("Humidity={1:0.1f}%".format(humidity))
 			time.sleep(10);
 			lcd.clear();	
 		else:
