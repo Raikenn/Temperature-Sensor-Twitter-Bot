@@ -19,7 +19,8 @@ while True:
 			report = {}
 			report["value1"] = temperature
 			report["value2"] = humidity
-			requests.post("https://maker.ifttt.com/trigger/Tweet_MyTemp/with/key/buJ6MmPiVC-uT66K2gj-9V4g1JCG5Rg3eBqWmfyS0d6", data=report)
+			#removed the private key due this making this a public repository
+			requests.post("https://maker.ifttt.com/trigger/Tweet_MyTemp/with/key/INSERT PRIVATE KEY HERE", data=report)
 			#lcd.printout("temp={0:0.1f}C \n Humidity={1:0.1f}% ".format(temperature, humidity))
 			lcd.setCursor(0, 0)
 			lcd.printout("temp={0:0.1f}C".format(temperature))
